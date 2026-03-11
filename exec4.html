@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h3>Desafio 4: Par ou Ímpar</h3>
+      <input
+        type="number"
+        id="inputNum"
+        placeholder="Digite um número inteiro"
+      />
+      <button onclick="verificarParidade()">Verificar Paridade</button>
+      <p id="resPar" class="resultado"></p>
+    </div>
+
+    <!-- Bloco de código de javascript -->
+    <script>
+      const verificarParidade = () => {
+        const numInput = document.getElementById("inputNum").value;
+        const numero = parseInt(numInput); // Conversão necessária (Slide 89)
+
+        const msg = numero % 2 === 0 ? "O número é PAR" : "O número é ÍMPAR"; // Slide 57
+        document.getElementById("resPar").innerText = msg;
+      };
+    </script>
+  </body>
+</html>
