@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercício 1</title>
+  </head>
+  <body>
+    <div class="card">
+      <h3>Desafio: Checkout de Loja</h3>
+      <input type="number" id="valorProd" placeholder="Valor do Produto (R$)" />
+      <input type="number" id="idadeCli" placeholder="Idade do Cliente" />
+      <button onclick="executarCheckout()">Calcular</button>
+      <p id="resCheckout" class="resultado"></p>
+    </div>
+
+    <!-- Bloco de javascript para funcionamento da página -->
+    <script>
+      const executarCheckout = () => {
+        const valor = parseFloat(document.getElementById("valorProd").value);
+        const idade = parseInt(document.getElementById("idadeCli").value);
+
+        // Arrow function para cálculo (Slide 90)
+        const calcular = (v, i) => (i >= 60 ? v * 0.85 : v * 0.95);
+
+        const resultado = calcular(valor, idade);
+        document.getElementById("resCheckout").innerText =
+          `Total: R$ ${resultado.toFixed(2)}`;
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 2</title>
+  </head>
+  <body>
+    <div class="card">
+      <h3>Desafio 2: Validador de Acesso</h3>
+      <p>Simulação: Token Ativo (Interno)</p>
+      <label><input type="checkbox" id="chkAdmin" /> É Administrador?</label
+      ><br />
+      <label
+        ><input type="checkbox" id="chkPerm" /> Tem Permissão Especial?</label
+      >
+      <button onclick="validarAcesso()">Verificar Acesso</button>
+      <p id="resAcesso" class="resultado"></p>
+    </div>
+
+    <!-- Bloco de código javascript -->
+    <script>
+      const validarAcesso = () => {
+        const temToken = true; // Simulação de sistema (Slide 146)
+        const eAdmin = document.getElementById("chkAdmin").checked;
+        const temPermissao = document.getElementById("chkPerm").checked;
+
+        // Uso de && e || conforme Slide 61 e 62
+        const autorizado = temToken && (eAdmin || temPermissao);
+
+        document.getElementById("resAcesso").innerText = autorizado
+          ? "Acesso Liberado ✅"
+          : "Acesso Negado ❌";
+      };
+    </script>
+  </body>
+</html>

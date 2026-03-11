@@ -1,0 +1,20 @@
+/* CSS Responsivo */
+body { font-family: sans-serif; padding: 20px; background-color: #f4f4f9; }
+.container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.card { 
+    background: white; padding: 20px; border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 100%; max-width: 400px; 
+}
+input, button { 
+    width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; 
+    box-sizing: border-box; /* Garante que o padding não quebre o layout */
+}
+button { background-color: #0056b3; color: white; cursor: pointer; font-weight: bold; }
+button:hover { background-color: #004494; }
+.resultado { color: #2c3e50; font-weight: bold; margin-top: 10px; }
+
+/* Media Query para telas muito pequenas */
+@media (max-width: 480px) {
+    body { padding: 10px; }
+    .card { padding: 15px; }
+}
