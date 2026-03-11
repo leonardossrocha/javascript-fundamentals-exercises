@@ -24,11 +24,11 @@ Os exercícios abaixo cobrem os fundamentos iniciais da linguagem, conforme apre
 ## 🛠️ Desafios Propostos
 Cada pasta dentro deste repositório contém uma solução completa (HTML/CSS/JS) com design responsivo para dispositivos móveis:
 
-1.  [cite_start]**Checkout de Loja**: Uso de operadores e condicionais para cálculo de descontos[cite: 50, 213].
-2.  [cite_start]**Validador de Acesso**: Lógica booleana com operadores `&&` e `||`[cite: 61, 62].
-3.  [cite_start]**Média Acadêmica**: Implementação de lógica de decisão com Arrow Functions[cite: 92, 215].
-4.  [cite_start]**Par ou Ímpar**: Manipulação de inputs e conversão de tipos com `parseInt()`[cite: 89, 238].
-5.  [cite_start]**Cadastro de Veículo**: Criação e manipulação de propriedades de objetos[cite: 158, 160].
+1.  **Checkout de Loja**: Uso de operadores e condicionais para cálculo de descontos[cite: 50, 213].
+2.  **Validador de Acesso**: Lógica booleana com operadores `&&` e `||`[cite: 61, 62].
+3.  **Média Acadêmica**: Implementação de lógica de decisão com Arrow Functions[cite: 92, 215].
+4.  **Par ou Ímpar**: Manipulação de inputs e conversão de tipos com `parseInt()`[cite: 89, 238].
+5.  **Cadastro de Veículo**: Criação e manipulação de propriedades de objetos[cite: 158, 160].
 
 ---
 
