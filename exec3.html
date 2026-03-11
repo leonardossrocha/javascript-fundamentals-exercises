@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 3</title>
+  </head>
+  <body>
+    <div class="card">
+      <h3>Desafio 3: Média de ADS</h3>
+      <input
+        type="number"
+        id="nota1"
+        placeholder="Nota da Prova 1"
+        step="0.1"
+      />
+      <input
+        type="number"
+        id="nota2"
+        placeholder="Nota da Prova 2"
+        step="0.1"
+      />
+      <button onclick="calcularMedia()">Calcular Resultado</button>
+      <p id="resMedia" class="resultado"></p>
+    </div>
+
+    <!-- Bloco de código de javascript -->
+    <script>
+      const calcularMedia = () => {
+        const n1 = parseFloat(document.getElementById("nota1").value);
+        const n2 = parseFloat(document.getElementById("nota2").value);
+
+        // Arrow Function enxuta (Slide 92)
+        const obterStatus = (m) =>
+          m >= 7 ? "Aprovado" : m >= 5 ? "Recuperação" : "Reprovado";
+
+        const media = (n1 + n2) / 2;
+        document.getElementById("resMedia").innerText =
+          `Média: ${media.toFixed(1)} - ${obterStatus(media)}`;
+      };
+    </script>
+  </body>
+</html>
