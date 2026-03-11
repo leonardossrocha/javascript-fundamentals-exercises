@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercicio 5</title>
+  </head>
+  <body>
+    <main class="card">
+      <h3>Desafio 5: Cadastro de Veículo</h3>
+      <p>Veículo: Caloi MTB (Objeto JS)</p>
+      <input type="number" id="inputAno" placeholder="Novo Ano do Modelo" />
+      <button onclick="atualizarBike()">Atualizar Propriedade</button>
+      <p id="resBike" class="resultado"></p>
+    </main>
+
+    <!-- Bloco de código javascript -->
+    <script>
+      // Objeto global para persistência simples
+      let minhaBike = { marca: "Caloi", modelo: "MTB", ano: 2021 };
+
+      const atualizarBike = () => {
+        const novoAno = parseInt(document.getElementById("inputAno").value);
+        minhaBike.ano = novoAno; // Manipulação de propriedade (Slide 160)
+
+        document.getElementById("resBike").innerText =
+          `Bike atualizada: ${minhaBike.marca}, Ano: ${minhaBike.ano}`;
+      };
+    </script>
+  </body>
+</html>
