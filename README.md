@@ -13,11 +13,11 @@ Este repositório contém o material prático e a lista de exercícios desenvolv
 
 ## 📚 Conteúdo da Aula
 Os exercícios abaixo cobrem os fundamentos iniciais da linguagem, conforme apresentado em aula (Slides 1 a 31):
-* [cite_start]**Fundamentos e Sintaxe**: Integração com HTML5 via tag `<script>`[cite: 11].
-* [cite_start]**Variáveis e Escopo**: Diferenças entre escopo global, de função e de bloco[cite: 41, 42, 43, 44].
-* [cite_start]**Tipos de Dados**: Primitivos (Number, String, Boolean) e Compostos (Object, Array)[cite: 142, 144, 148].
-* [cite_start]**Operadores**: Matemáticos, lógicos e relacionais[cite: 49, 59, 65].
-* [cite_start]**Funções**: Declaração clássica, funções anônimas e **Arrow Functions**[cite: 74, 80, 81, 90].
+* **Fundamentos e Sintaxe**: Integração com HTML5 via tag `<script>`[cite: 11].
+* **Variáveis e Escopo**: Diferenças entre escopo global, de função e de bloco[cite: 41, 42, 43, 44].
+* **Tipos de Dados**: Primitivos (Number, String, Boolean) e Compostos (Object, Array)[cite: 142, 144, 148].
+* **Operadores**: Matemáticos, lógicos e relacionais[cite: 49, 59, 65].
+* **Funções**: Declaração clássica, funções anônimas e **Arrow Functions**[cite: 74, 80, 81, 90].
 
 ---
 
