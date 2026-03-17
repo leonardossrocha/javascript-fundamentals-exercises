@@ -1,20 +1,228 @@
-/* CSS Responsivo */
-body { font-family: sans-serif; padding: 20px; background-color: #f4f4f9; }
-.container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-.card { 
-    background: white; padding: 20px; border-radius: 8px; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 100%; max-width: 400px; 
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-input, button { 
-    width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; 
-    box-sizing: border-box; /* Garante que o padding não quebre o layout */
-}
-button { background-color: #0056b3; color: white; cursor: pointer; font-weight: bold; }
-button:hover { background-color: #004494; }
-.resultado { color: #2c3e50; font-weight: bold; margin-top: 10px; }
 
-/* Media Query para telas muito pequenas */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Header e Navegação */
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+header h1 {
+    text-align: center;
+    color: #667eea;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+nav a:hover {
+    background-color: #764ba2;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+}
+
+/* Seção Principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.intro {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.intro h2 {
+    color: #667eea;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.intro p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Estilos para Cards e Formulários */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Inputs e Buttons */
+input,
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+input {
+    background-color: #f9f9f9;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+}
+
+button {
+    background-color: #667eea;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+}
+
+button:hover {
+    background-color: #764ba2;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Resultado */
+.resultado {
+    color: #667eea;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f0f4ff;
+    border-left: 4px solid #667eea;
+    border-radius: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro {
+        padding: 25px;
+    }
+
+    .intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 480px) {
-    body { padding: 10px; }
-    .card { padding: 15px; }
+    body {
+        padding: 0;
+    }
+
+    header {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    .intro {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .intro h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    input,
+    button {
+        padding: 10px;
+        margin: 8px 0;
+    }
 }
