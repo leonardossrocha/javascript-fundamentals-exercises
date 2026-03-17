@@ -147,6 +147,34 @@ button:active {
     transform: scale(0.98);
 }
 
+/* Botão de Voltar */
+.btn-voltar {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 16px;
+    background-color: #764ba2;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+}
+
+.btn-voltar:hover {
+    background-color: #667eea;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-voltar:active {
+    transform: scale(0.98);
+}
+
 /* Resultado */
 .resultado {
     color: #667eea;
